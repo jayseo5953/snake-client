@@ -12,6 +12,10 @@ const connect = () => {
   conn.on('data',(data) => {
     console.log("The game says: ",data)
   })
+  conn.on('connect',()=>{
+    console.log("Successfully connected to game server")
+    conn.write("Name: SJS")
+  })
 
   return conn;
 }
