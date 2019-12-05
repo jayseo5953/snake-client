@@ -7,6 +7,3 @@ console.log('Connecting ...');
 
 setUpInput(connect());
 
-
-
-
