@@ -1,7 +1,7 @@
 let connection;
-
+// '\u0003'
 const HandleUserInput = (data) => {
-    if (data === '\u0003') {
+    if (data === "q") {
       console.log("bye bye")
       process.exit();
     } else if (data === "w"){
@@ -12,6 +12,10 @@ const HandleUserInput = (data) => {
       connection.write("Move: left");
     } else if (data === "d"){
       connection.write("Move: right");
+    } else if (data === "1"){
+      connection.write("Say: Hello");
+    } else if (data === "2"){
+      connection.write("Say: hahahaha");
     }
 }
 
