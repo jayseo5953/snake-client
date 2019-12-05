@@ -6,9 +6,9 @@ const { setUpInput } = require('./input');
 console.log('Connecting ...');
 
 
-connect();
 
-setUpInput();
+
+setUpInput(connect());
 
 
 
