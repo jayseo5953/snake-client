@@ -26,4 +26,3 @@ const connect = () => {
   return conn;
 }
 module.exports.connect = connect
-console.log(module.exports)
